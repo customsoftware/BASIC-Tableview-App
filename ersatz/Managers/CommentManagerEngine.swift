@@ -8,50 +8,21 @@
 
 import Foundation
 
-protocol CommentManager {
-    var commentList: [Comment]? { get }
-    var singleComment: Comment? { get }
-    func getAllComments(with handler: @escaping CompletionHander)
-    func getComments(in postId: Int, with handler: @escaping CompletionHander)
-}
-
 class CommentManagerEngine: CommentManager {
-    let decoder = JSONDecoder()
-    let encoder = JSONEncoder()
+    var commentList: [Comment]?
+    var singleComment: Comment?
     
-    private(set) var commentList: [Comment]?
-    private(set) var singleComment: Comment?
-    
-    func loadDataIntoSingleComment(_ data: Data?) -> Int? {
-        var retValue: Int?
-        guard let data = data else { return retValue }
-        do {
-            let aComment = try decoder.decode(Comment.self, from: data)
-            retValue = 1
-            singleComment = aComment
-            
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        return retValue
-    }
-    
-    func loadDataIntoComments(_ data: Data?) -> Int? {
-        var retValue: Int?
-        guard let data = data else { return retValue }
-        do {
-            let comments = try decoder.decode([Comment].self, from: data)
-            retValue = comments.count
-            commentList = comments
-            
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        return retValue
-    }
-    
+    /**
+     This is a codable struct to carry data throughout the application
+     
+     - Author:
+     Ken Cluff
+     
+     - Version:
+     0.1
+     
+     The MessagePost object
+     */
     func getAllComments(with handler: @escaping CompletionHander) {
         let urlString = baseURL + "posts/1/comments"
         guard let url = URL(string: urlString) else {
@@ -70,6 +41,25 @@ class CommentManagerEngine: CommentManager {
         dataTask.resume()
     }
     
+    /**
+     This is an asynchronous call to get comments for a selected post
+     
+     - Author:
+     Ken Cluff
+     
+     - returns:
+     An error indicating if the query failed.
+     An array of Comments
+     
+     - parameters:
+     - postId: This is an int which represents the id property of the selected post
+     - handler: This conforms to the CompletionHandler type alias. It is used to return the results of the query to the calling object
+     
+     - Version:
+     0.1
+     
+     
+     */
     func getComments(in postId: Int, with handler: @escaping CompletionHander) {
         let urlString = "\(baseURL)comments?postId=\(postId)"
         guard let url = URL(string: urlString) else {
@@ -88,6 +78,4 @@ class CommentManagerEngine: CommentManager {
         
         dataTask.resume()
     }
-    
-    
 }

@@ -9,8 +9,8 @@
 import XCTest
 
 class ersatzAPITest: XCTestCase {
-    let manager = PostManagingEngine()
-    let commentManager = CommentManagerEngine()
+    var manager = PostManagingEngine()
+    var commentManager = CommentManagerEngine()
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

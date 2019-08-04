@@ -23,6 +23,8 @@
 		904B0EC022F6413900A3EECC /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0EBF22F6413900A3EECC /* CommentTableViewController.swift */; };
 		904B0EC522F655E900A3EECC /* CommentManagerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0EC422F655E900A3EECC /* CommentManagerEngine.swift */; };
 		904B0EC622F656FA00A3EECC /* CommentManagerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0EC422F655E900A3EECC /* CommentManagerEngine.swift */; };
+		904B0ECA22F65DF300A3EECC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0EC922F65DF300A3EECC /* Protocols.swift */; };
+		904B0ECB22F65E1900A3EECC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0EC922F65DF300A3EECC /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		904B0EBD22F5D36100A3EECC /* ersatzAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ersatzAPITest.swift; sourceTree = "<group>"; };
 		904B0EBF22F6413900A3EECC /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		904B0EC422F655E900A3EECC /* CommentManagerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentManagerEngine.swift; sourceTree = "<group>"; };
+		904B0EC922F65DF300A3EECC /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,7 @@
 			children = (
 				904B0EA922F5B60500A3EECC /* PostManager.swift */,
 				904B0EC422F655E900A3EECC /* CommentManagerEngine.swift */,
+				904B0EC922F65DF300A3EECC /* Protocols.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -247,6 +251,7 @@
 			files = (
 				904B0EC022F6413900A3EECC /* CommentTableViewController.swift in Sources */,
 				904B0EA622F5B5D900A3EECC /* MessagePost.swift in Sources */,
+				904B0ECA22F65DF300A3EECC /* Protocols.swift in Sources */,
 				904B0EA822F5B5E000A3EECC /* Comment.swift in Sources */,
 				904B0EAA22F5B60500A3EECC /* PostManager.swift in Sources */,
 				904B0E9622F5B45800A3EECC /* HomeViewController.swift in Sources */,
@@ -261,6 +266,7 @@
 			files = (
 				904B0EB322F5BFC900A3EECC /* ersatzTests.swift in Sources */,
 				904B0EBB22F5C6AA00A3EECC /* Comment.swift in Sources */,
+				904B0ECB22F65E1900A3EECC /* Protocols.swift in Sources */,
 				904B0EBE22F5D36100A3EECC /* ersatzAPITest.swift in Sources */,
 				904B0EBA22F5C54400A3EECC /* PostManager.swift in Sources */,
 				904B0EBC22F5C6B200A3EECC /* MessagePost.swift in Sources */,

@@ -13,8 +13,8 @@ import XCTest
 
 class ersatzTests: XCTestCase {
     let baseURL = "https://jsonplaceholder.typicode.com/"
-    let postManager = PostManagingEngine()
-    let commentManager = CommentManagerEngine()
+    var postManager = PostManagingEngine()
+    var commentManager = CommentManagerEngine()
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -8,9 +8,17 @@
 
 import Foundation
 
-/*
+/**
+ This is a codable struct to carry data throughout the application
  
- **/
+ - Author:
+ Ken Cluff
+ 
+ - Version:
+ 0.1
+ 
+ The MessagePost object
+ */
 struct MessagePost: Codable {
     var userId: Int
     var id: Int
