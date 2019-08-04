@@ -25,6 +25,7 @@
 		904B0EC622F656FA00A3EECC /* CommentManagerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0EC422F655E900A3EECC /* CommentManagerEngine.swift */; };
 		904B0ECA22F65DF300A3EECC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0EC922F65DF300A3EECC /* Protocols.swift */; };
 		904B0ECB22F65E1900A3EECC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0EC922F65DF300A3EECC /* Protocols.swift */; };
+		904B0ECD22F695EC00A3EECC /* TableViewCellClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B0ECC22F695EC00A3EECC /* TableViewCellClasses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		904B0EBF22F6413900A3EECC /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		904B0EC422F655E900A3EECC /* CommentManagerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentManagerEngine.swift; sourceTree = "<group>"; };
 		904B0EC922F65DF300A3EECC /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		904B0ECC22F695EC00A3EECC /* TableViewCellClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellClasses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				904B0E9522F5B45800A3EECC /* HomeViewController.swift */,
 				904B0EBF22F6413900A3EECC /* CommentTableViewController.swift */,
+				904B0ECC22F695EC00A3EECC /* TableViewCellClasses.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				904B0EA822F5B5E000A3EECC /* Comment.swift in Sources */,
 				904B0EAA22F5B60500A3EECC /* PostManager.swift in Sources */,
 				904B0E9622F5B45800A3EECC /* HomeViewController.swift in Sources */,
+				904B0ECD22F695EC00A3EECC /* TableViewCellClasses.swift in Sources */,
 				904B0E9422F5B45800A3EECC /* AppDelegate.swift in Sources */,
 				904B0EC522F655E900A3EECC /* CommentManagerEngine.swift in Sources */,
 			);

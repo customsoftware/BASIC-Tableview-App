@@ -33,8 +33,7 @@ class CommentManagerEngine: CommentManager {
         let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             defer { handler(self?.commentList, error) }
             guard error == nil,
-                let result = response as? HTTPURLResponse,
-                result.statusCode == 200,
+                responseIsValid(response),
                 let data = data,
                 let _ = self?.loadDataIntoComments(data) else { return }
         }
@@ -70,8 +69,7 @@ class CommentManagerEngine: CommentManager {
         let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             defer { handler(self?.commentList, error) }
             guard error == nil,
-                let result = response as? HTTPURLResponse,
-                result.statusCode == 200,
+                responseIsValid(response),
                 let data = data,
                 let _ = self?.loadDataIntoComments(data) else { return }
         }

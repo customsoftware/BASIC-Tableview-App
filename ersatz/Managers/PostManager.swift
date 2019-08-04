@@ -22,8 +22,7 @@ class PostManagingEngine: PostManager {
         let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             defer { handler(self?.postList, error) }
             guard error == nil,
-                let result = response as? HTTPURLResponse,
-                result.statusCode == 200,
+                responseIsValid(response),
                 let data = data,
                 let _ = self?.loadDataIntoPosts(data) else { return }
         }
@@ -40,8 +39,7 @@ class PostManagingEngine: PostManager {
         let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             defer { handler(self?.singlePost, error) }
             guard error == nil,
-                let result = response as? HTTPURLResponse,
-                result.statusCode == 200,
+                responseIsValid(response),
                 let data = data,
                 let _ = self?.loadDataIntoSinglePost(data) else { return }
         }

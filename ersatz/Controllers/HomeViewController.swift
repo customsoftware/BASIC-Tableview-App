@@ -60,15 +60,3 @@ class HomeViewController: UITableViewController {
         performSegue(withIdentifier: pushSegueID, sender: post)
     }
 }
-
-class DisplayCell: UITableViewCell {
-    var owningPost: MessagePost? {
-        didSet {
-            if let post = owningPost {
-                textLabel?.text = post.title
-                detailTextLabel?.text = post.body
-            }
-        }
-    }
-}
-

@@ -13,6 +13,13 @@ enum APIError: Error {
     case other
 }
 
+
+func responseIsValid(_ response: URLResponse?) -> Bool {
+    guard let result = response as? HTTPURLResponse,
+        result.statusCode == 200 else { return false }
+    return true
+}
+
 typealias CompletionHander = (Any?, Error?) -> Void
 let baseURL = "https://jsonplaceholder.typicode.com/"
 

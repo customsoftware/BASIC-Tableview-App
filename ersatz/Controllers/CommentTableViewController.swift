@@ -44,18 +44,3 @@ class CommentTableViewController: UITableViewController {
         return cell
     }
 }
-
-class CommentCell: UITableViewCell {
-    var controllingComment: Comment? {
-        didSet {
-            guard let comment = controllingComment else { return }
-            commentTitle.text = comment.name
-            commentAuthor.text = comment.email
-            commentText.text = comment.body
-        }
-    }
-    
-    @IBOutlet weak var commentTitle: UILabel!
-    @IBOutlet weak var commentAuthor: UILabel!
-    @IBOutlet weak var commentText: UITextView!
-}
