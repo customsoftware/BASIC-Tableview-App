@@ -13,15 +13,18 @@ class CommentManagerEngine: CommentManager {
     var singleComment: Comment?
     
     /**
-     This is a codable struct to carry data throughout the application
+     This is how to get all comments associated with all posts
      
      - Author:
      Ken Cluff
      
+     - parameters:
+     - handler: This conforms to the CompletionHandler type alias. It is used to return the results of the query to the calling object
+     
      - Version:
      0.1
      
-     The MessagePost object
+     This gets all comments. Used a URLSession data task to retrieve the information. This is barebones, the only validation of the results is in the 'responseIsValid' function.
      */
     func getAllComments(with handler: @escaping CompletionHander) {
         let urlString = baseURL + "posts/1/comments"
@@ -58,6 +61,7 @@ class CommentManagerEngine: CommentManager {
      0.1
      
      
+     This gets all comments for a given post. Used a URLSession data task to retrieve the information. This is barebones, the only validation of the results is in the 'responseIsValid' function.
      */
     func getComments(in postId: Int, with handler: @escaping CompletionHander) {
         let urlString = "\(baseURL)comments?postId=\(postId)"
