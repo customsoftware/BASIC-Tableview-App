@@ -15,7 +15,6 @@ class CommentTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.estimatedRowHeight = 110
         guard let post = controllingPost else { return }
         navigationItem.title = post.title

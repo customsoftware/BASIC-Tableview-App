@@ -26,10 +26,9 @@ class CommentCell: UITableViewCell {
 class DisplayCell: UITableViewCell {
     var owningPost: MessagePost? {
         didSet {
-            if let post = owningPost {
-                textLabel?.text = post.title
-                detailTextLabel?.text = post.body
-            }
+            guard let post = owningPost else { return }
+            textLabel?.text = post.title
+            detailTextLabel?.text = post.body
         }
     }
 }
