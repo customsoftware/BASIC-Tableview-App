@@ -49,7 +49,6 @@
 		904B0EA522F5B5D900A3EECC /* MessagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePost.swift; sourceTree = "<group>"; };
 		904B0EA722F5B5E000A3EECC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		904B0EA922F5B60500A3EECC /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
-		904B0EAB22F5BF0200A3EECC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		904B0EB022F5BFC900A3EECC /* ersatzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ersatzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		904B0EB222F5BFC900A3EECC /* ersatzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ersatzTests.swift; sourceTree = "<group>"; };
 		904B0EB422F5BFC900A3EECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,7 +106,6 @@
 				904B0E9F22F5B45A00A3EECC /* Info.plist */,
 				904B0EC122F6527300A3EECC /* Models */,
 				904B0EC322F655D100A3EECC /* Managers */,
-				904B0EAB22F5BF0200A3EECC /* README.md */,
 			);
 			path = ersatz;
 			sourceTree = "<group>";
